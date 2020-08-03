@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,700;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,400;0,700;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,400;0,700;1,300;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    background: url('https://images.unsplash.com/photo-1525538182201-02cd1909effb?ixlib=rb-1.2.1&auto=format&fit=crop&w=967&q=80') bottom no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    color:black;
+    font-size: 4rem;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+
+.news {
+    background-color: #fff;
+    padding: 50px auto 32px;
+}
+
+article:nth-child(2n){
+    background-color: rgb(219, 218, 218);    
+}
+
+article:nth-child(-n+2) h2::before{
+    content: "NEW";
+    color: red;
+    font-size: 1rem;
+    vertical-align: text-top;
+}
+
+article {
+    width: 768 px;
+    margin: 0 10% 32px;
+    padding: 6px 15px;
+    border-bottom: 1px solid rgb(128, 128, 128);
+}
+
+@media (min-width: 1200px)
+{
+    article {margin: 0 25% 32px;}
+}
+
+article a{
+    color: rgb(33,37, 41);
+    text-decoration: none;
+}
+
+article a:hover{
+    color: #0085a1;
+}
+
+article h2{
+    font-family: 'Roboto Condensed', sans-serif;
+    margin-bottom: 5px;
+}
+
+article p{
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.article-meta{
+    color: rgb(134, 142, 150);
+    margin-bottom: 5px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+article img{
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+}
+
+
+footer {
+    padding-top: 20px;
+    padding-bottom: 60px;
+    text-align: center;
+}
+
+footer .links {
+    margin-bottom: 50px;
+}
+
+footer .links > a {
+    color: #636b6f;
+    padding: 0 25px;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: .1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.copyright {
+    color: rgb(108,117,125);
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+
+
